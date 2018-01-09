@@ -47,7 +47,7 @@ public class ProcessFileDpt {
 			try {
 				fr.close();
 				br.close();
-				System.out.println("Se suma el archivo:  " + file.toString().substring(51) + " en "
+				System.out.println("Se suma el archivo:  " + dpt.getName()+".txt"+ " en "
 						+ ((System.currentTimeMillis() - timeStamp) / 1000) + " seg");
 				generateResDptFile(dpt, sum);
 			} catch (IOException e) {
@@ -78,7 +78,7 @@ public class ProcessFileDpt {
 			}
 		}
 
-		System.out.println("Se genera el archivo:  " + dpt.getUrlResFile().toString().substring(52) + " en "
+		System.out.println("Se genera el archivo:  " + dpt.getName() + ".res" + " en "
 				+ ((System.currentTimeMillis() - time) / 1000) + " seg");
 	}
 
